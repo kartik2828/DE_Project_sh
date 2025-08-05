@@ -27,4 +27,9 @@ print('orginal name', name)
 
 name  = name.replace('k','K')
 print("after replace", name)
-print(name)
+
+#===============================
+'''
+SUMMARY: Mutable => List, Set, dict
+IMMU => tuple, str, int, float
+'''
