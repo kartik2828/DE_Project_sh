@@ -12,7 +12,7 @@ Theey are defined using @classmethod decorator.
 
 regular instance method: These are the most common one.
 this is associated with instance of the class. 
-here we the self concept, when we define this method, the method's first argument is always self.
+here we have the self concept, when we define this method, the method's first argument is always self.
 '''
 
 class My_class():
@@ -32,4 +32,5 @@ obj = My_class()
 My_class.static_method()
 My_class.class_method()
 obj.instance_method("python")
+
 
