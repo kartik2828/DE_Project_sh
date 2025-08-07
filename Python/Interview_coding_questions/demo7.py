@@ -1,8 +1,10 @@
 
 # Explain the difference between *args and **kwargs in Python.
 '''
-1) *args = in this we can pass multiple argument. without declaring them in the function.
-2) **kwargs = in this we can pass multiple argumemnts in the form of key-value pair.
+1) *args = This stands for non keyword arguments, in this we can pass multiple argument.
+ without declaring them in the function. it receives a tuple.
+2) **kwargs = This stands for keyword arguments ,
+in this we can pass multiple argumemnts in the form of key-value pair. it receives a dictionary.
 '''
 def demo_function(*sum):
     result = 0
