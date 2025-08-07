@@ -1,0 +1,18 @@
+class Parent:
+    def parent_method(self):
+        print("I am parent")
+class child1(Parent):
+    def child1_method(self):
+        print("I am first child")
+
+class child2(Parent):
+    def child2_method(self):
+        print("I am second child")
+
+obj = child1()
+obj1 = child2()
+
+obj.child1_method()
+obj.parent_method()
+obj1.child2_method()
+obj1.parent_method()
