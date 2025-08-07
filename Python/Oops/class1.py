@@ -5,7 +5,6 @@ class Smartphone:
         self.name = name
         self.brand = brand
         
-
     def description(self):
         return f"This {self.name} is of {self.brand} company"
 
