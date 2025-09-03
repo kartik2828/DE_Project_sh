@@ -8,4 +8,4 @@ obj = check_palindrome('Nitin')
 obj1 = check_palindrome('Hello')
 
 print(obj)
-print(obj1)
+print(obj1) 
