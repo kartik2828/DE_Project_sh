@@ -168,7 +168,23 @@ EmpID | FullName      | LastName | LastNameCount
 
 select * from Employees;
 
-
-select EmpID, FullName from Employees
-
-
+with CTE as (
+    select EmpID, FullName, f.value,
+           row_number() over(partition by EmpID order by (select 1)) as a
+    from Employees
+    cross apply string_split(FullName, ' ') f
+),
+CTE2 as (
+    select EmpID, FullName, value as LastName
+    from CTE
+    where a = 2
+),
+CTE3 as (
+    select LastName, count(*) as LastNameCount
+    from CTE2
+    group by LastName
+)
+select c2.EmpID, c2.FullName, c2.LastName, c3.LastNameCount
+from CTE2 c2
+join CTE3 c3
+on c2.LastName = c3.LastName;
