@@ -167,5 +167,8 @@ EmpID | FullName      | LastName | LastNameCount
 */
 
 select * from Employees;
-select * from Employees;
+
+
+select EmpID, FullName from Employees
+
 
