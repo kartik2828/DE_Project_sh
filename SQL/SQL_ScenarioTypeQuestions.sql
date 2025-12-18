@@ -166,5 +166,5 @@ EmpID | FullName      | LastName | LastNameCount
 4     | Rohit Singh   | Singh    | 1
 */
 
-select * from Employees
+select * from Employees;
 
