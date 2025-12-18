@@ -165,3 +165,6 @@ EmpID | FullName      | LastName | LastNameCount
 2     | Amit Verma    | Verma    | 1
 4     | Rohit Singh   | Singh    | 1
 */
+
+select * from Employees
+
